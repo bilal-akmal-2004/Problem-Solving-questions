@@ -38,3 +38,19 @@ console.log(decoder2(5)); // "No values above average"
 console.log(decoder2(10)); // "No values above average"
 // The average is 2, and no elements are greater than 2
 // End of code
+
+//hi hehe
+//hi heh
+
+let a = 10;
+let b = 20;
+
+// Some random comment
+// Another comment line
+function add(x, y) {
+  return x + y;
+}
+
+console.log(add(a, b)); // 30
+// End of code
+//hi hehe
