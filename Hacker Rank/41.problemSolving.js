@@ -15,3 +15,12 @@ if (a % 2 === 0) {
 }
 
 //  complexity: O(1)
+
+//Example 3: Check if someone is old enough
+let age = 16;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a minor.");
+}
