@@ -24,3 +24,21 @@ if (age >= 18) {
 } else {
   console.log("You are a minor.");
 }
+
+// Count Vowels
+// Write a function that counts how many vowels (a, e, i, o, u) are in a given string.
+// Example input:
+// "javascript"
+
+let string = "javascript";
+let vowels = ["a", "e", "i", "o", "u"];
+let count = 0;
+for (let i = 0; i < string.length; i++) {
+  for (let j = 0; j < vowels.length; j++) {
+    if (string[i] === vowels[j]) {
+      count++;
+      break;
+    }
+  }
+}
+console.log(count);
