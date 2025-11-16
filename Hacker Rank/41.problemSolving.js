@@ -42,3 +42,15 @@ for (let i = 0; i < string.length; i++) {
   }
 }
 console.log(count);
+
+//Convert Celsius to Fahrenheit
+
+//Formula:
+//°F = (°C × 9/5) + 32
+//Write a program to convert a Celsius temperature to Fahrenheit.
+
+let c = prompt("Enter the c: ");
+
+let f = c * (9 / 5) + 32;
+console.log(f);
+return f;
