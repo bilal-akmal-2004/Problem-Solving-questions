@@ -54,3 +54,38 @@ let c = prompt("Enter the c: ");
 let f = c * (9 / 5) + 32;
 console.log(f);
 return f;
+
+// Problem: Find the Most Frequent Character in a String
+// Write a function mostFrequentChar(str) that returns the character that appears the most times.
+// If two characters have the same highest frequency, return the first one in the string.
+// ✔️ Example Input
+// mostFrequentChar("banana");
+// ✔️ Expected Output
+// "a"
+// Explanation:
+// b → 1
+// a → 3
+// n → 2
+// → "a" appears most.
+
+let string = "banana";
+let obj = {};
+for (let i = 0; i < string.length; i++) {
+  if (obj[string[i]]) {
+    obj[string[i]]++;
+  } else {
+    obj[string[i]] = 1;
+  }
+}
+console.log(obj);
+let largest = 0;
+let result = "";
+for (let key in obj) {
+  if (largest <= obj[key]) {
+    largest = obj[key];
+    result = key;
+  }
+  console.log(obj[key]);
+}
+
+console.log(result, largest);
