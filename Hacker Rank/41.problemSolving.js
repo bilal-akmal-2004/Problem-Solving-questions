@@ -68,13 +68,13 @@ return f;
 // n → 2
 // → "a" appears most.
 
-let string = "banana";
+let stringosh = "banana";
 let obj = {};
-for (let i = 0; i < string.length; i++) {
-  if (obj[string[i]]) {
-    obj[string[i]]++;
+for (let i = 0; i < stringosh.length; i++) {
+  if (obj[stringosh[i]]) {
+    obj[stringosh[i]]++;
   } else {
-    obj[string[i]] = 1;
+    obj[stringosh[i]] = 1;
   }
 }
 console.log(obj);
